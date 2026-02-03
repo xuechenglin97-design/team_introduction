@@ -8,7 +8,7 @@ interface DetailHeaderProps {
 
 export const DetailHeader: React.FC<DetailHeaderProps> = ({ title, onBack }) => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-forest-950/80 backdrop-blur-md border-b border-white/5 h-14 flex items-center justify-between px-4 max-w-md mx-auto">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-forest-900/95 backdrop-blur-md border-b border-white/10 h-14 flex items-center justify-between px-4 max-w-md mx-auto shadow-lg">
       <button 
         onClick={onBack}
         className="p-1 rounded-full hover:bg-white/10 transition-colors"
@@ -25,13 +25,13 @@ export const DetailHeader: React.FC<DetailHeaderProps> = ({ title, onBack }) => 
 
 export const HomeHeader: React.FC = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-forest-950/90 backdrop-blur-sm h-14 flex items-center justify-between px-4 max-w-md mx-auto">
-      <Menu className="w-6 h-6 text-white/80" />
-      <div className="text-xs font-medium text-white/80 flex flex-col items-center">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-forest-900/95 backdrop-blur-sm h-14 flex items-center justify-between px-4 max-w-md mx-auto shadow-lg">
+      <Menu className="w-6 h-6 text-white/90" />
+      <div className="text-xs font-medium text-white/90 flex flex-col items-center">
         <span>中国科学院过程工程研究所</span>
-        <span className="text-[10px] text-white/50">生物质炼制团队</span>
+        <span className="text-[10px] text-white/60">生物质炼制团队</span>
       </div>
-      <Search className="w-6 h-6 text-white/80" />
+      <Search className="w-6 h-6 text-white/90" />
     </header>
   );
 };
@@ -44,8 +44,8 @@ interface SectionTitleProps {
 export const SectionTitle: React.FC<SectionTitleProps> = ({ title, className = "" }) => {
   return (
     <div className={`flex items-center space-x-2 mb-4 ${className}`}>
-      <div className="w-1 h-5 bg-neon-400 rounded-full"></div>
-      <h2 className="text-lg font-bold text-white">{title}</h2>
+      <div className="w-1.5 h-6 bg-forest-900 rounded-full"></div>
+      <h2 className="text-lg font-bold text-forest-950">{title}</h2>
     </div>
   );
 };

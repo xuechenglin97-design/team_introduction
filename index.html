@@ -11,14 +11,17 @@
           extend: {
             colors: {
               forest: {
-                950: '#020d04', // Deepest background
-                900: '#051408', // Card background
-                800: '#0d2613', // Lighter card
-                700: '#15361b',
+                50: '#f2fbf5',  // New Light Background
+                100: '#dcfce7', // Borders/Accents
+                200: '#bbf7d0',
+                800: '#166534', // Text
+                900: '#14532d', // Headers/Buttons
+                950: '#052e16', // Deepest Text
               },
               neon: {
                 400: '#37e968', // Primary accent
                 500: '#22c55e',
+                600: '#16a34a', // Darker neon for light bg text
               },
             },
             fontFamily: {
@@ -30,8 +33,8 @@
     </script>
     <style>
       body {
-        background-color: #020d04;
-        color: #ffffff;
+        background-color: #f2fbf5; /* Changed to light */
+        color: #052e16; /* Changed to dark green text */
         -webkit-font-smoothing: antialiased;
       }
       /* Custom scrollbar for webkit */
@@ -39,27 +42,25 @@
         width: 4px;
       }
       ::-webkit-scrollbar-track {
-        background: #051408; 
+        background: #f2fbf5; 
       }
       ::-webkit-scrollbar-thumb {
-        background: #15361b; 
+        background: #166534; 
         border-radius: 2px;
       }
     </style>
-    <script type="importmap">
-    {
-      "imports": {
-        "react-dom/": "https://esm.sh/react-dom@19.2.4/",
-        "lucide-react": "https://esm.sh/lucide-react@0.563.0",
-        "react/": "https://esm.sh/react@19.2.4/",
-        "react": "https://esm.sh/react@19.2.4"
-      }
-    }
-    </script>
-  </head>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+</head>
   <body>
     <div id="root"></div>
-    <!-- 下面这行就是“启动钥匙”，我帮你加上了 -->
-    <script type="module" src="/index.tsx"></script>
   </body>
 </html>

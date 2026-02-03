@@ -53,7 +53,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen w-full max-w-md mx-auto bg-forest-950 relative shadow-2xl overflow-hidden">
+    <div className="min-h-screen w-full max-w-md mx-auto bg-forest-50 relative shadow-2xl overflow-hidden text-forest-950">
       {renderPage()}
     </div>
   );
