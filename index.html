@@ -46,18 +46,20 @@
         border-radius: 2px;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4"
-  }
-}
-</script>
-</head>
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://esm.sh/react-dom@19.2.4/",
+        "lucide-react": "https://esm.sh/lucide-react@0.563.0",
+        "react/": "https://esm.sh/react@19.2.4/",
+        "react": "https://esm.sh/react@19.2.4"
+      }
+    }
+    </script>
+  </head>
   <body>
     <div id="root"></div>
+    <!-- 下面这行就是“启动钥匙”，我帮你加上了 -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
