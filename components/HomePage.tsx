@@ -48,7 +48,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       <div className="px-5 py-6">
         <SectionTitle title="团队简介" />
         <p className="text-sm text-forest-800 leading-relaxed mb-6 text-justify">
-            团队依托中国科学院过程工程研究所生物质炼制工程北京市重点实验室，致力于生物质资源的高效转化与高值化利用，拥有深厚的学术积淀与工业化经验。从实验室小试到千吨级中试，我们打通了生物质全产业链技术路径。曾获国家科技进步二等奖、中国专利金奖、中国发明专利优秀奖等，获得国家973、863、国家重点研发计划、中科院先导、STS等各类科研经费累计9000万元，技术转让实施企业50余家，专利技术授权转让/许可经费累计3000万元。
+            团队依托中国科学院过程工程研究所生物质炼制工程北京市重点实验室，致力于生物质资源的高效转化与高值化利用，拥有深厚的学术积淀与工业化经验。从实验室小试到万吨级示范项目，我们打通了生物质全产业链技术路径。曾获国家科技进步二等奖、中国专利金奖、中国发明专利优秀奖等，获得国家973、863、国家重点研发计划、中科院先导、STS等各类科研经费累计9000万元，技术转让实施企业50余家，专利技术授权转让/许可经费累计3000万元。
         </p>
 
         {/* Stats Cards - Updated for Light Theme */}
@@ -92,7 +92,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/50 to-transparent p-5 flex flex-col justify-end">
                     <h3 className="text-xl font-bold mb-1 text-white">秸秆可发酵糖</h3>
                     <div className="flex flex-col gap-2">
-                        <span className="text-xs text-gray-200 leading-snug line-clamp-2">糖浓度＞150 g/L，综合成本与淀粉糖持平，可作为下游各类生物基产品的生物发酵/化学合成原料</span>
+                        <span className="text-xs text-gray-200 leading-snug line-clamp-2">糖浓度＞600 g/L，综合成本与淀粉糖持平，可作为下游各类生物基产品的生物发酵/化学合成原料</span>
                         <div className="self-end flex items-center text-xs text-neon-400 bg-forest-950/60 px-2 py-1 rounded backdrop-blur-sm border border-neon-400/30">
                             点击查看详情 <ChevronRight className="w-3 h-3 ml-1" />
                         </div>

@@ -23,16 +23,16 @@ export const ProductSugar: React.FC<{onBack: () => void}> = ({ onBack }) => (
                 <SectionTitle title="技术指标" />
                 <div className="grid grid-cols-3 gap-3 mb-4">
                     <div className="bg-white border border-forest-100 shadow-sm rounded-xl p-3 text-center">
-                        <div className="text-[10px] text-forest-600/70 font-bold mb-1">PURITY</div>
+                        <div className="text-[10px] text-forest-600/70 font-bold mb-1">纯度</div>
                         <div className="text-xl font-bold text-forest-800">&gt;99%</div>
                     </div>
                     <div className="bg-white border border-forest-100 shadow-sm rounded-xl p-3 text-center">
-                        <div className="text-[10px] text-forest-600/70 font-bold mb-1">YIELD</div>
-                        <div className="text-xl font-bold text-forest-800">95%</div>
+                        <div className="text-[10px] text-forest-600/70 font-bold mb-1">比旋光度</div>
+                        <div className="text-xl font-bold text-forest-800">52.5°</div>
                     </div>
                     <div className="bg-white border border-forest-100 shadow-sm rounded-xl p-3 text-center">
-                        <div className="text-[10px] text-forest-600/70 font-bold mb-1">STANDARD</div>
-                        <div className="text-sm font-bold text-forest-800 mt-1.5">食品级</div>
+                        <div className="text-[10px] text-forest-600/70 font-bold mb-1">规格</div>
+                        <div className="text-xl font-bold text-forest-800">食品级</div>
                     </div>
                 </div>
                 <div className="bg-white rounded-xl p-4 border border-forest-100 shadow-sm space-y-3">
@@ -87,7 +87,7 @@ export const ProductSugar: React.FC<{onBack: () => void}> = ({ onBack }) => (
                         </div>
                         <div>
                             <h4 className="font-bold text-sm text-forest-950">食品行业</h4>
-                            <p className="text-xs text-gray-600 mt-1">作为天然甜味剂、低GI健康食品配料及功能性食品基料。</p>
+                            <p className="text-xs text-gray-600 mt-1">可添加到功能性饮料、烘焙类产品、糖果等食品中。</p>
                         </div>
                     </div>
                     <div className="flex items-center gap-4 bg-white p-4 rounded-xl border border-forest-100 shadow-sm">
@@ -144,11 +144,11 @@ export const ProductFermentable: React.FC<{onBack: () => void}> = ({ onBack }) =
                 <div className="grid grid-cols-2 gap-3 mb-3">
                     <div className="bg-white p-4 rounded-xl shadow-sm border border-forest-100">
                         <div className="text-[10px] text-gray-400 uppercase font-bold tracking-widest mb-1">糖浓度 (TDS)</div>
-                        <div className="text-2xl font-bold text-forest-800">≥ 150 <span className="text-sm font-normal text-gray-500">g/L</span></div>
+                        <div className="text-2xl font-bold text-forest-800">≥ 600 <span className="text-sm font-normal text-gray-500">g/L</span></div>
                     </div>
                     <div className="bg-white p-4 rounded-xl shadow-sm border border-forest-100">
                         <div className="text-[10px] text-gray-400 uppercase font-bold tracking-widest mb-1">葡萄糖/木糖</div>
-                        <div className="text-2xl font-bold text-forest-800">2.5 : 1 <span className="text-sm font-normal text-gray-500">Avg</span></div>
+                        <div className="text-2xl font-bold text-forest-800">3 : 1 <span className="text-sm font-normal text-gray-500">Avg</span></div>
                     </div>
                 </div>
                 <div className="bg-white p-4 rounded-xl shadow-sm border border-forest-100">
@@ -304,8 +304,6 @@ export const ProductLignin: React.FC<{onBack: () => void}> = ({ onBack }) => (
                     ))}
                 </div>
              </section>
-             
-             {/* Removed CAS BIOMASS REFINING TEAM footer as requested */}
         </div>
     </div>
 );
@@ -441,31 +439,38 @@ export const EquipReactor: React.FC<{onBack: () => void}> = ({ onBack }) => (
 
             <section>
                 <SectionTitle title="性能指标" />
-                <div className="bg-white border border-forest-100 rounded-2xl p-6 space-y-6 shadow-sm">
+                <div className="bg-white border border-forest-100 rounded-2xl p-6 space-y-8 shadow-sm">
+                    {/* Item 1 */}
                     <div>
-                        <div className="flex justify-between items-end mb-2">
-                            <span className="text-forest-600 text-xs font-bold">糖浓度提升</span>
-                            <div>
-                                <span className="text-3xl font-bold text-forest-900">300</span>
-                                <span className="text-sm text-gray-500 ml-1">g/L</span>
+                        <div className="flex items-center justify-between mb-3">
+                            <div className="flex flex-col">
+                                <span className="text-lg font-bold text-forest-950">糖浓度提升</span>
+                                <span className="text-sm text-gray-500 mt-1">最高可达 300 g/L <span className="text-xs text-gray-400">(无浓缩情况)</span></span>
+                            </div>
+                            <div className="text-right shrink-0 ml-4">
+                                <span className="text-4xl font-bold text-forest-900">300</span>
+                                <span className="text-sm text-gray-500 font-medium ml-1">g/L</span>
                             </div>
                         </div>
-                        <div className="text-gray-800 text-sm font-bold mb-2">最高可达 300 g/L <span className="text-xs font-normal text-gray-400 ml-2">(无浓缩情况)</span></div>
                         <div className="h-2 w-full bg-forest-50 rounded-full overflow-hidden">
-                            <div className="h-full bg-forest-500 w-3/4 rounded-full"></div>
+                            <div className="h-full bg-forest-500 w-3/4 rounded-full shadow-[0_0_10px_rgba(34,197,94,0.4)]"></div>
                         </div>
                     </div>
+
+                    {/* Item 2 */}
                     <div>
-                        <div className="flex justify-between items-end mb-2">
-                            <span className="text-forest-600 text-xs font-bold">综合用水量降低</span>
-                            <div>
-                                <span className="text-3xl font-bold text-forest-900">40</span>
-                                <span className="text-sm text-gray-500 ml-1">%</span>
+                        <div className="flex items-center justify-between mb-3">
+                             <div className="flex flex-col">
+                                <span className="text-lg font-bold text-forest-950">综合用水量降低</span>
+                                <span className="text-sm text-gray-500 mt-1">资源节约效益显著</span>
+                            </div>
+                            <div className="text-right shrink-0 ml-4">
+                                <span className="text-4xl font-bold text-forest-900">40</span>
+                                <span className="text-sm text-gray-500 font-medium ml-1">%</span>
                             </div>
                         </div>
-                        <div className="text-gray-800 text-sm font-bold mb-2">资源节约效益显著</div>
                         <div className="h-2 w-full bg-forest-50 rounded-full overflow-hidden">
-                            <div className="h-full bg-forest-500 w-2/5 rounded-full"></div>
+                            <div className="h-full bg-forest-500 w-2/5 rounded-full shadow-[0_0_10px_rgba(34,197,94,0.4)]"></div>
                         </div>
                     </div>
                 </div>
@@ -477,7 +482,6 @@ export const EquipReactor: React.FC<{onBack: () => void}> = ({ onBack }) => (
                     {[
                         {k: "最大容积", v: "400 m³"},
                         {k: "固形物浓度（最高）", v: "35%"},
-                        {k: "搅拌系统", v: "高扭矩复合式动力"},
                         {k: "控温精度", v: "±0.1 ℃"},
                     ].map((row, i) => (
                         <div key={i} className="flex bg-transparent border-b border-gray-50 last:border-0">
