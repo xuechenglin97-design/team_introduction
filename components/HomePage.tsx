@@ -16,7 +16,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       <div className="relative pt-14">
         <div className="relative h-64 w-full overflow-hidden">
             <img 
-              src="https://picsum.photos/800/600?grayscale&blur=2" 
+              src="/hero-bg.jpg" 
               alt="Lab Background" 
               className="w-full h-full object-cover opacity-80"
             />
@@ -71,7 +71,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 onClick={() => onNavigate('product-sugar')}
                 className="group relative h-48 rounded-xl overflow-hidden cursor-pointer shadow-lg"
             >
-                <img src="https://picsum.photos/400/300?random=1" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" alt="Straw Sugar" />
+                <img src="/product.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" alt="Straw Sugar" />
                 <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/50 to-transparent p-5 flex flex-col justify-end">
                     <h3 className="text-xl font-bold mb-1 text-white">秸秆结晶糖</h3>
                     <div className="flex justify-between items-center">
@@ -88,7 +88,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 onClick={() => onNavigate('product-fermentable')}
                 className="group relative h-48 rounded-xl overflow-hidden cursor-pointer shadow-lg"
             >
-                <img src="https://picsum.photos/400/300?random=2" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" alt="Fermentable Sugar" />
+                <img src="/product2.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" alt="Fermentable Sugar" />
                 <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/50 to-transparent p-5 flex flex-col justify-end">
                     <h3 className="text-xl font-bold mb-1 text-white">秸秆可发酵糖</h3>
                     <div className="flex flex-col gap-2">
@@ -105,7 +105,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 onClick={() => onNavigate('product-lignin')}
                 className="group relative h-48 rounded-xl overflow-hidden cursor-pointer shadow-lg"
             >
-                <img src="https://picsum.photos/400/300?random=3" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" alt="Lignin" />
+                <img src="/product3.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" alt="Lignin" />
                 <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/50 to-transparent p-5 flex flex-col justify-end">
                     <h3 className="text-xl font-bold mb-1 text-white">酶解木质素</h3>
                     <div className="flex flex-col gap-2">
@@ -127,7 +127,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 className="bg-white rounded-xl overflow-hidden shadow-md border border-forest-100 cursor-pointer"
              >
                 <div className="h-40 w-full relative">
-                    <img src="https://picsum.photos/600/400?random=4" className="w-full h-full object-cover" alt="Explosion Device" />
+                    <img src="/device1.jpg" className="w-full h-full object-cover" alt="Explosion Device" />
                 </div>
                 <div className="p-4 bg-white text-forest-950">
                     <div className="flex justify-between items-start mb-2">
@@ -149,7 +149,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 className="bg-white rounded-xl overflow-hidden shadow-md border border-forest-100 cursor-pointer"
              >
                 <div className="h-40 w-full relative">
-                    <img src="https://picsum.photos/600/400?random=5" className="w-full h-full object-cover" alt="Reactor" />
+                    <img src="/device2.jpg" className="w-full h-full object-cover" alt="Reactor" />
                 </div>
                 <div className="p-4 bg-white text-forest-950">
                     <div className="flex justify-between items-start mb-2">
@@ -172,7 +172,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             onClick={() => onNavigate('platform-langfang')}
             className="relative h-96 rounded-2xl overflow-hidden mb-8 group cursor-pointer shadow-lg"
         >
-            <img src="https://picsum.photos/600/800?random=6" className="absolute inset-0 w-full h-full object-cover" alt="Platform" />
+            <img src="/platform.jpg" className="absolute inset-0 w-full h-full object-cover" alt="Platform" />
             <div className="absolute inset-0 bg-gradient-to-t from-forest-950/95 via-forest-900/60 to-forest-900/30 p-6 flex flex-col justify-end">
                 <div className="flex items-center space-x-2 text-neon-400 mb-2">
                     <Factory className="w-4 h-4" />
@@ -204,11 +204,8 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
         {/* Footer */}
         <div className="bg-white rounded-2xl p-8 text-center border border-forest-100 shadow-sm">
-            <div className="w-24 h-24 mx-auto bg-forest-50 rounded-lg mb-4 flex items-center justify-center">
-                 {/* Placeholder for QR Code */}
-                 <svg className="w-12 h-12 text-forest-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
-                 </svg>
+            <div className="w-24 h-24 mx-auto bg-forest-50 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                 <img src="/sample-qr.jpg" className="w-full h-full object-cover" alt="QR Code" />
             </div>
             <h4 className="font-bold text-sm mb-6 text-forest-950">获取样品请扫码</h4>
             

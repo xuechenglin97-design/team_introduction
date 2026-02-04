@@ -7,7 +7,7 @@ export const ProductSugar: React.FC<{onBack: () => void}> = ({ onBack }) => (
     <div className="pb-8 bg-forest-50 min-h-screen">
         <DetailHeader title="产品详情: 秸秆结晶糖" onBack={onBack} />
         <div className="relative h-[340px] w-full pt-14">
-            <img src="https://picsum.photos/800/600?random=10" className="w-full h-full object-cover" alt="Straw Sugar" />
+            <img src="/product.jpg" className="w-full h-full object-cover" alt="Straw Sugar" />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-forest-950/20 to-forest-950/90"></div>
             <div className="absolute bottom-6 left-6 right-6">
                 <span className="text-[10px] font-bold text-neon-400 border border-neon-400 px-2 py-0.5 rounded-full uppercase tracking-wider bg-forest-950/50">High Purity Cellulosic Crystal Sugar</span>
@@ -118,9 +118,9 @@ export const ProductSugar: React.FC<{onBack: () => void}> = ({ onBack }) => (
 export const ProductFermentable: React.FC<{onBack: () => void}> = ({ onBack }) => (
     <div className="pb-8 bg-forest-50 min-h-screen">
         <DetailHeader title="产品详情: 秸秆可发酵糖" onBack={onBack} />
-        <div className="relative h-[400px] w-full pt-14 flex items-center justify-center bg-forest-100">
-             {/* Using a placeholder bottle image */}
-            <div className="w-full h-full bg-[url('https://picsum.photos/600/800?random=11')] bg-cover bg-center"></div>
+        <div className="relative h-[400px] w-full pt-14 flex items-center justify-center bg-forest-100 overflow-hidden">
+             {/* Switched to img tag for consistent local image usage */}
+            <img src="/product2.jpg" className="w-full h-full object-cover" alt="Fermentable Sugar Syrup" />
             <div className="absolute inset-0 bg-gradient-to-t from-forest-900/95 via-forest-900/40 to-transparent"></div>
             
             <div className="absolute bottom-6 left-6 right-6">
@@ -213,7 +213,7 @@ export const ProductLignin: React.FC<{onBack: () => void}> = ({ onBack }) => (
         
         {/* Lignin Hero Image - Updated Layout */}
         <div className="relative h-[340px] w-full pt-14">
-            <img src="https://picsum.photos/800/600?random=12" className="w-full h-full object-cover" alt="Lignin Powder" />
+            <img src="/product3.jpg" className="w-full h-full object-cover" alt="Lignin Powder" />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-forest-950/20 to-forest-950/90"></div>
             <div className="absolute bottom-6 left-6 right-6">
                 <span className="text-[10px] font-bold text-neon-400 border border-neon-400 px-2 py-0.5 rounded-full uppercase tracking-wider bg-forest-950/50">
@@ -313,7 +313,7 @@ export const EquipExplosion: React.FC<{onBack: () => void}> = ({ onBack }) => (
     <div className="pb-8 bg-forest-50 min-h-screen">
         <DetailHeader title="装备详情: 汽爆装置" onBack={onBack} />
         <section className="relative h-[300px] w-full mt-14">
-            <img src="https://picsum.photos/800/600?random=13" className="w-full h-full object-cover" alt="Explosion Equipment" />
+            <img src="/device1.jpg" className="w-full h-full object-cover" alt="Explosion Equipment" />
             <div className="absolute inset-0 bg-gradient-to-t from-forest-900 via-transparent to-transparent"></div>
             <div className="absolute bottom-6 left-6 right-6">
                 <span className="inline-block px-2 py-0.5 bg-neon-400 text-forest-950 text-[10px] font-bold rounded mb-2">核心自研装备</span>
@@ -402,7 +402,7 @@ export const EquipReactor: React.FC<{onBack: () => void}> = ({ onBack }) => (
     <div className="pb-8 bg-forest-50 min-h-screen">
         <DetailHeader title="装备详情: 高固酶解反应器" onBack={onBack} />
         <section className="relative w-full aspect-video mt-14 mx-4 rounded-2xl overflow-hidden max-w-[calc(100%-2rem)] border border-white/10 shadow-lg">
-            <img src="https://picsum.photos/800/600?random=14" className="w-full h-full object-cover" alt="Reactor" />
+            <img src="/device2.jpg" className="w-full h-full object-cover" alt="Reactor" />
             <div className="absolute inset-0 bg-gradient-to-t from-forest-900 to-transparent opacity-80"></div>
             <div className="absolute bottom-4 left-4">
                 <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-md text-white text-[10px] font-bold rounded-full mb-2 border border-white/30">
@@ -502,15 +502,15 @@ export const PlatformLangfang: React.FC<{onBack: () => void}> = ({ onBack }) => 
         
         <div className="mt-14 space-y-4 px-4 mb-8">
             <div className="relative rounded-xl overflow-hidden h-48 shadow-lg">
-                 <img src="https://picsum.photos/800/400?random=15" className="w-full h-full object-cover" alt="Platform 1" />
+                 <img src="/platform.jpg" className="w-full h-full object-cover" alt="Platform 1" />
                  <div className="absolute bottom-2 left-4 text-sm font-bold text-white drop-shadow-md">廊坊中试基地鸟瞰</div>
             </div>
             <div className="grid grid-cols-2 gap-4 h-32">
                  <div className="relative rounded-xl overflow-hidden shadow-md">
-                    <img src="https://picsum.photos/400/300?random=16" className="w-full h-full object-cover" alt="Platform 2" />
+                    <img src="/platform2.jpg" className="w-full h-full object-cover" alt="Platform 2" />
                  </div>
                  <div className="relative rounded-xl overflow-hidden shadow-md">
-                    <img src="https://picsum.photos/400/300?random=17" className="w-full h-full object-cover" alt="Platform 3" />
+                    <img src="/platform3.jpg" className="w-full h-full object-cover" alt="Platform 3" />
                  </div>
             </div>
         </div>
