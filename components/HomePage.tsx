@@ -71,7 +71,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 onClick={() => onNavigate('product-sugar')}
                 className="group relative h-48 rounded-xl overflow-hidden cursor-pointer shadow-lg"
             >
-                <img src="/product.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" alt="Straw Sugar" />
+                <img src="/product1.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" alt="Straw Sugar" />
                 <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/50 to-transparent p-5 flex flex-col justify-end">
                     <h3 className="text-xl font-bold mb-1 text-white">秸秆结晶糖</h3>
                     <div className="flex justify-between items-center">
@@ -127,7 +127,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 className="bg-white rounded-xl overflow-hidden shadow-md border border-forest-100 cursor-pointer"
              >
                 <div className="h-40 w-full relative">
-                    <img src="/device1.jpg" className="w-full h-full object-cover" alt="Explosion Device" />
+                    <img src="/devicel1.jpg" className="w-full h-full object-cover" alt="Explosion Device" />
                 </div>
                 <div className="p-4 bg-white text-forest-950">
                     <div className="flex justify-between items-start mb-2">
@@ -149,7 +149,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 className="bg-white rounded-xl overflow-hidden shadow-md border border-forest-100 cursor-pointer"
              >
                 <div className="h-40 w-full relative">
-                    <img src="/device2.jpg" className="w-full h-full object-cover" alt="Reactor" />
+                    <img src="/devicel2.jpg" className="w-full h-full object-cover" alt="Reactor" />
                 </div>
                 <div className="p-4 bg-white text-forest-950">
                     <div className="flex justify-between items-start mb-2">
