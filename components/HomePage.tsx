@@ -28,7 +28,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                  <div className="w-1 h-10 bg-neon-400 mr-3 rounded-full shadow-[0_0_10px_rgba(55,233,104,0.5)]"></div>
                  <div className="flex flex-col">
                     <span className="text-lg font-bold text-white tracking-wider drop-shadow-md leading-tight">中国科学院过程工程研究所</span>
-                    <span className="text-xl font-bold text-white tracking-widest drop-shadow-md leading-tight mt-0.5">生物质炼制团队</span>
+                    <span className="text-xl font-bold text-white tracking-widest drop-shadow-md leading-tight mt-0.5">生物质炼制工程研究团队</span>
                  </div>
             </div>
 
@@ -48,7 +48,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       <div className="px-5 py-6">
         <SectionTitle title="团队简介" />
         <p className="text-sm text-forest-800 leading-relaxed mb-6 text-justify">
-            团队依托中国科学院过程工程研究所，生物质炼制工程北京市重点实验室，致力于生物质资源的高效转化与高值化利用，拥有深厚的学术积淀与工业化经验。从实验室小试到千吨级中试，我们打通了生物质全产业链技术路径。曾获国家科技进步二等奖、中国专利金奖、中国发明专利优秀奖等，获得国家973、863、国家重点研发计划、中科院先导、STS等各类科研经费累计9000万元，技术转让实施企业50余家，专利技术授权转让/许可经费累计3000万元。
+            团队依托中国科学院过程工程研究所生物质炼制工程北京市重点实验室，致力于生物质资源的高效转化与高值化利用，拥有深厚的学术积淀与工业化经验。从实验室小试到千吨级中试，我们打通了生物质全产业链技术路径。曾获国家科技进步二等奖、中国专利金奖、中国发明专利优秀奖等，获得国家973、863、国家重点研发计划、中科院先导、STS等各类科研经费累计9000万元，技术转让实施企业50余家，专利技术授权转让/许可经费累计3000万元。
         </p>
 
         {/* Stats Cards - Updated for Light Theme */}
@@ -157,7 +157,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                         <TestTube2 className="w-5 h-5 text-forest-600 shrink-0 ml-2" />
                     </div>
                     <p className="text-xs text-gray-600 mb-4 line-clamp-2">
-                        解决高浓度生物质体系传质难题，实现高浓度糖液的一步式连续产出。
+                        解决高浓度生物质酶解体系传质难题，实现高浓度糖液的一步产出。
                     </p>
                     <button className="w-full py-2 bg-forest-900 text-white text-sm font-medium rounded flex items-center justify-center hover:bg-forest-800 transition-colors">
                         点击查看详情 <ArrowRight className="w-4 h-4 ml-1" />
@@ -176,7 +176,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             <div className="absolute inset-0 bg-gradient-to-t from-forest-950/95 via-forest-900/60 to-forest-900/30 p-6 flex flex-col justify-end">
                 <div className="flex items-center space-x-2 text-neon-400 mb-2">
                     <Factory className="w-4 h-4" />
-                    <span className="text-xs font-bold">生物质产业中试基地</span>
+                    <span className="text-xs font-bold">生物质产业中试基地·河北廊坊</span>
                 </div>
                 <h3 className="text-xl font-bold mb-2 leading-snug text-white">
                     生物质炼制中试示范平台
@@ -207,7 +207,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             <div className="w-24 h-24 mx-auto bg-forest-50 rounded-lg mb-4 flex items-center justify-center">
                  {/* Placeholder for QR Code */}
                  <svg className="w-12 h-12 text-forest-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
                  </svg>
             </div>
             <h4 className="font-bold text-sm mb-6 text-forest-950">获取样品请扫码</h4>
@@ -218,7 +218,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         
         <div className="mt-8 text-center text-[10px] text-forest-400/80">
             中国科学院过程工程研究所<br/>
-            生物质炼制团队 © 2026
+            生物质炼制工程研究团队 © 2026
         </div>
       </div>
     </div>

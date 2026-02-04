@@ -33,8 +33,8 @@
     </script>
     <style>
       body {
-        background-color: #f2fbf5; /* Light Background */
-        color: #052e16; /* Dark Green Text */
+        background-color: #f2fbf5; /* Changed to light */
+        color: #052e16; /* Changed to dark green text */
         -webkit-font-smoothing: antialiased;
       }
       /* Custom scrollbar for webkit */
@@ -49,20 +49,18 @@
         border-radius: 2px;
       }
     </style>
-    <script type="importmap">
-    {
-      "imports": {
-        "react-dom/": "https://esm.sh/react-dom@19.2.4/",
-        "lucide-react": "https://esm.sh/lucide-react@0.563.0",
-        "react/": "https://esm.sh/react@19.2.4/",
-        "react": "https://esm.sh/react@19.2.4"
-      }
-    }
-    </script>
-  </head>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+</head>
   <body>
     <div id="root"></div>
-    <!-- 关键行：这行绝对不能删！它是连接 HTML 和你的代码的桥梁 -->
-    <script type="module" src="/index.tsx"></script>
   </body>
 </html>

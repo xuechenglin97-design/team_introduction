@@ -10,10 +10,10 @@ export const ProductSugar: React.FC<{onBack: () => void}> = ({ onBack }) => (
             <img src="https://picsum.photos/800/600?random=10" className="w-full h-full object-cover" alt="Straw Sugar" />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-forest-950/20 to-forest-950/90"></div>
             <div className="absolute bottom-6 left-6 right-6">
-                <span className="text-[10px] font-bold text-neon-400 border border-neon-400 px-2 py-0.5 rounded-full uppercase tracking-wider bg-forest-950/50">High Purity Biomass Sugar</span>
+                <span className="text-[10px] font-bold text-neon-400 border border-neon-400 px-2 py-0.5 rounded-full uppercase tracking-wider bg-forest-950/50">High Purity Cellulosic Crystal Sugar</span>
                 <h2 className="text-3xl font-bold mt-2 mb-2 text-white">秸秆结晶糖</h2>
                 <p className="text-sm text-white/90 leading-relaxed font-medium">
-                    基于秸秆高效分析、低强度汽爆预处理和秸秆高固酶解成套技术，实现高纯度秸秆结晶糖的规模化制备。
+                    基于秸秆高效分级、低强度汽爆预处理和秸秆高固酶解成套技术，实现高纯度秸秆结晶糖的规模化制备。
                 </p>
             </div>
         </div>
@@ -38,7 +38,7 @@ export const ProductSugar: React.FC<{onBack: () => void}> = ({ onBack }) => (
                 <div className="bg-white rounded-xl p-4 border border-forest-100 shadow-sm space-y-3">
                     <div className="flex justify-between text-sm border-b border-gray-100 pb-2">
                         <span className="text-gray-500">外观状态</span>
-                        <span className="text-forest-900 font-medium">淡黄色或白色晶体</span>
+                        <span className="text-forest-900 font-medium">白色或淡黄色晶体</span>
                     </div>
                     <div className="flex justify-between text-sm border-b border-gray-100 pb-2">
                         <span className="text-gray-500">灰分含量</span>
@@ -171,14 +171,14 @@ export const ProductFermentable: React.FC<{onBack: () => void}> = ({ onBack }) =
                         <div className="bg-forest-50 p-2 rounded-lg h-min text-forest-600"><Banknote className="w-5 h-5"/></div>
                         <div>
                             <h4 className="font-bold text-sm mb-1 text-forest-950">低成本</h4>
-                            <p className="text-xs text-gray-600 leading-relaxed">与淀粉糖成本基本持平</p>
+                            <p className="text-xs text-gray-600 leading-relaxed">综合成本与淀粉糖基本持平</p>
                         </div>
                      </div>
                      <div className="flex gap-4 p-4 bg-white rounded-xl shadow-sm border border-forest-100">
                         <div className="bg-forest-50 p-2 rounded-lg h-min text-forest-600"><Zap className="w-5 h-5"/></div>
                         <div>
                             <h4 className="font-bold text-sm mb-1 text-forest-950">高效发酵性能</h4>
-                            <p className="text-xs text-gray-600 leading-relaxed">丰富的碳源组成更利于多种微生物生长，显著缩短发酵周期，提高产率。</p>
+                            <p className="text-xs text-gray-600 leading-relaxed">更低的抑制物含量避免了对微生物发酵的不良影响，更高的糖浓度带来更高的产物浓度，降低分离纯化成本。</p>
                         </div>
                      </div>
                 </div>
@@ -528,7 +528,7 @@ export const PlatformLangfang: React.FC<{onBack: () => void}> = ({ onBack }) => 
                             <div className="text-[10px] text-gray-500 mt-1">中试生产线</div>
                         </div>
                         <div className="border-l border-gray-100">
-                            <div className="text-2xl font-bold text-forest-700">50<span className="text-xs align-top">+</span></div>
+                            <div className="text-2xl font-bold text-forest-700">100<span className="text-xs align-top">+</span></div>
                             <div className="text-[10px] text-gray-500 mt-1">核心装备</div>
                         </div>
                     </div>
