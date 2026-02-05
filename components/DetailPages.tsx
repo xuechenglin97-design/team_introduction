@@ -7,7 +7,7 @@ export const ProductSugar: React.FC<{onBack: () => void}> = ({ onBack }) => (
     <div className="pb-8 bg-forest-50 min-h-screen">
         <DetailHeader title="产品详情: 秸秆结晶糖" onBack={onBack} />
         <div className="relative h-[340px] w-full pt-14">
-            <img src="/product.jpg" className="w-full h-full object-cover" alt="Straw Sugar" />
+            <img src="/product1.jpg" className="w-full h-full object-cover" alt="Straw Sugar" />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-forest-950/20 to-forest-950/90"></div>
             <div className="absolute bottom-6 left-6 right-6">
                 <span className="text-[10px] font-bold text-neon-400 border border-neon-400 px-2 py-0.5 rounded-full uppercase tracking-wider bg-forest-950/50">High Purity Cellulosic Crystal Sugar</span>
@@ -313,7 +313,7 @@ export const EquipExplosion: React.FC<{onBack: () => void}> = ({ onBack }) => (
     <div className="pb-8 bg-forest-50 min-h-screen">
         <DetailHeader title="装备详情: 汽爆装置" onBack={onBack} />
         <section className="relative h-[300px] w-full mt-14">
-            <img src="/device1.jpg" className="w-full h-full object-cover" alt="Explosion Equipment" />
+            <img src="/devicel1.jpg" className="w-full h-full object-cover" alt="Explosion Equipment" />
             <div className="absolute inset-0 bg-gradient-to-t from-forest-900 via-transparent to-transparent"></div>
             <div className="absolute bottom-6 left-6 right-6">
                 <span className="inline-block px-2 py-0.5 bg-neon-400 text-forest-950 text-[10px] font-bold rounded mb-2">核心自研装备</span>
@@ -402,7 +402,7 @@ export const EquipReactor: React.FC<{onBack: () => void}> = ({ onBack }) => (
     <div className="pb-8 bg-forest-50 min-h-screen">
         <DetailHeader title="装备详情: 高固酶解反应器" onBack={onBack} />
         <section className="relative w-full aspect-video mt-14 mx-4 rounded-2xl overflow-hidden max-w-[calc(100%-2rem)] border border-white/10 shadow-lg">
-            <img src="/device2.jpg" className="w-full h-full object-cover" alt="Reactor" />
+            <img src="/devicel2.jpg" className="w-full h-full object-cover" alt="Reactor" />
             <div className="absolute inset-0 bg-gradient-to-t from-forest-900 to-transparent opacity-80"></div>
             <div className="absolute bottom-4 left-4">
                 <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-md text-white text-[10px] font-bold rounded-full mb-2 border border-white/30">
