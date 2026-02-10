@@ -1,6 +1,6 @@
 import React from 'react';
 import { HomeHeader, SectionTitle } from './Shared';
-import { ChevronRight, ArrowRight, Settings2, TestTube2, Factory } from 'lucide-react';
+import { ChevronRight, ArrowRight, Settings2, TestTube2, Factory, Phone } from 'lucide-react';
 import { PageRoute } from '../App';
 
 interface HomePageProps {
@@ -23,20 +23,26 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             {/* Green Overlay - kept dark for text contrast */}
             <div className="absolute inset-0 bg-gradient-to-t from-forest-900 via-forest-900/40 to-forest-900/30"></div>
             
-            {/* Team Name Overlay at Top of Image - Larger & Split Lines */}
+            {/* Team Name Overlay at Top of Image - Normal Spacing */}
             <div className="absolute top-4 left-6 right-6 z-10 flex items-start">
-                 <div className="w-1 h-10 bg-neon-400 mr-3 rounded-full shadow-[0_0_10px_rgba(55,233,104,0.5)]"></div>
+                 <div className="w-1 h-10 bg-neon-400 mr-3 rounded-full shadow-[0_0_10px_rgba(55,233,104,0.5)] shrink-0"></div>
                  <div className="flex flex-col">
-                    <span className="text-lg font-bold text-white tracking-wider drop-shadow-md leading-tight">中国科学院过程工程研究所</span>
-                    <span className="text-xl font-bold text-white tracking-widest drop-shadow-md leading-tight mt-0.5">生物质炼制工程研究团队</span>
+                    {/* Removed justify-between and split logic for normal spacing */}
+                    <div className="text-[17px] font-bold text-white drop-shadow-md leading-tight">
+                        中国科学院过程工程研究所
+                    </div>
+                    <div className="text-[19px] font-bold text-white drop-shadow-md leading-tight mt-1">
+                        生物质炼制工程研究团队
+                    </div>
                  </div>
             </div>
 
-            <div className="absolute bottom-6 left-6 right-6">
+            {/* Responsive Text & Padding */}
+            <div className="absolute bottom-6 left-4 right-4 sm:left-6 sm:right-6">
                 <span className="inline-block px-2 py-1 bg-white/10 backdrop-blur-md border border-white/30 text-xs text-white rounded mb-2">
                     全国重点实验室团队
                 </span>
-                <h1 className="text-3xl font-bold leading-tight mb-2 text-white">
+                <h1 className="text-2xl sm:text-3xl font-bold leading-tight mb-2 text-white">
                     30年深耕生物质<br/>
                     <span className="text-neon-400">驱动非粮生物制造未来</span>
                 </h1>
@@ -48,14 +54,14 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       <div className="px-5 py-6">
         <SectionTitle title="团队简介" />
         <p className="text-sm text-forest-800 leading-relaxed mb-6 text-justify">
-            团队依托中国科学院过程工程研究所生物质炼制工程北京市重点实验室，致力于生物质资源的高效转化与高值化利用，拥有深厚的学术积淀与工业化经验。从实验室小试到万吨级示范项目，我们打通了生物质全产业链技术路径。曾获国家科技进步二等奖、中国专利金奖、中国发明专利优秀奖等，获得国家973、863、国家重点研发计划、中科院先导、STS等各类科研经费累计9000万元，技术转让实施企业50余家，专利技术授权转让/许可经费累计3000万元。
+            团队依托中国科学院过程工程研究所生物质炼制工程北京市重点实验室，致力于生物质资源的高效转化与高值化利用，拥有深厚的学术积淀与工业化经验。从实验室小试到万吨级示范项目，打通了生物质全产业链技术路径。曾获国家科技进步二等奖、中国专利金奖、中国发明专利优秀奖等，先后承担国家973、863、国家重点研发计划、中科院先导、STS等科研项目，技术转让实施企业50余家。
         </p>
 
-        {/* Stats Cards - Updated for Light Theme */}
+        {/* Stats Cards - Updated Content */}
         <div className="grid grid-cols-2 gap-4 mb-8">
             <div className="bg-white p-4 rounded-xl shadow-md border-l-4 border-forest-900">
-                <div className="text-xs text-gray-500 mb-1">科研历程</div>
-                <div className="text-2xl font-bold text-forest-950">30+ <span className="text-sm font-normal">年</span></div>
+                <div className="text-xs text-gray-500 mb-1">授权专利</div>
+                <div className="text-2xl font-bold text-forest-950">200+ <span className="text-sm font-normal">件</span></div>
             </div>
             <div className="bg-white p-4 rounded-xl shadow-md border-l-4 border-forest-900">
                 <div className="text-xs text-gray-500 mb-1">核心论文</div>
@@ -63,16 +69,17 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             </div>
         </div>
 
-        {/* Core Products */}
+        {/* Core Products - Increased height & Adjusted Gradient */}
         <SectionTitle title="核心产品" />
         <div className="space-y-4 mb-8">
             {/* Card 1 */}
             <div 
                 onClick={() => onNavigate('product-sugar')}
-                className="group relative h-48 rounded-xl overflow-hidden cursor-pointer shadow-lg"
+                className="group relative h-56 rounded-xl overflow-hidden cursor-pointer shadow-lg"
             >
-                <img src="/product1.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" alt="Straw Sugar" />
-                <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/50 to-transparent p-5 flex flex-col justify-end">
+                <img src="/product.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" alt="Straw Sugar" />
+                {/* Gradient: Starts lower, leaving top clearer */}
+                <div className="absolute inset-0 bg-gradient-to-t from-forest-950/95 via-forest-950/20 to-transparent p-5 flex flex-col justify-end">
                     <h3 className="text-xl font-bold mb-1 text-white">秸秆结晶糖</h3>
                     <div className="flex justify-between items-center">
                         <span className="text-xs text-gray-200">纯度＞99%，食品级</span>
@@ -86,13 +93,14 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             {/* Card 2 */}
             <div 
                 onClick={() => onNavigate('product-fermentable')}
-                className="group relative h-48 rounded-xl overflow-hidden cursor-pointer shadow-lg"
+                className="group relative h-56 rounded-xl overflow-hidden cursor-pointer shadow-lg"
             >
                 <img src="/product2.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" alt="Fermentable Sugar" />
-                <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/50 to-transparent p-5 flex flex-col justify-end">
+                <div className="absolute inset-0 bg-gradient-to-t from-forest-950/95 via-forest-950/20 to-transparent p-5 flex flex-col justify-end">
                     <h3 className="text-xl font-bold mb-1 text-white">秸秆可发酵糖</h3>
                     <div className="flex flex-col gap-2">
-                        <span className="text-xs text-gray-200 leading-snug line-clamp-2">糖浓度＞600 g/L，综合成本与淀粉糖持平，可作为下游各类生物基产品的生物发酵/化学合成原料</span>
+                        {/* Removed (无浓缩情况下) */}
+                        <span className="text-xs text-gray-200 leading-snug line-clamp-2">糖浓度最高突破600 g/L，综合成本与淀粉糖持平，可作为下游各类生物基产品的生物发酵/化学合成原料</span>
                         <div className="self-end flex items-center text-xs text-neon-400 bg-forest-950/60 px-2 py-1 rounded backdrop-blur-sm border border-neon-400/30">
                             点击查看详情 <ChevronRight className="w-3 h-3 ml-1" />
                         </div>
@@ -100,14 +108,14 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 </div>
             </div>
 
-            {/* Card 3 */}
+            {/* Card 3 - Renamed to 秸秆高活性木质素 */}
             <div 
                 onClick={() => onNavigate('product-lignin')}
-                className="group relative h-48 rounded-xl overflow-hidden cursor-pointer shadow-lg"
+                className="group relative h-56 rounded-xl overflow-hidden cursor-pointer shadow-lg"
             >
                 <img src="/product3.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" alt="Lignin" />
-                <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/50 to-transparent p-5 flex flex-col justify-end">
-                    <h3 className="text-xl font-bold mb-1 text-white">酶解木质素</h3>
+                <div className="absolute inset-0 bg-gradient-to-t from-forest-950/95 via-forest-950/20 to-transparent p-5 flex flex-col justify-end">
+                    <h3 className="text-xl font-bold mb-1 text-white">秸秆高活性木质素</h3>
                     <div className="flex flex-col gap-2">
                         <span className="text-xs text-gray-200 leading-snug line-clamp-2">高反应活性，可用于制备无醛黏合剂、特种分散剂等各类产品</span>
                         <div className="self-end flex items-center text-xs text-neon-400 bg-forest-950/60 px-2 py-1 rounded backdrop-blur-sm border border-neon-400/30">
@@ -127,7 +135,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 className="bg-white rounded-xl overflow-hidden shadow-md border border-forest-100 cursor-pointer"
              >
                 <div className="h-40 w-full relative">
-                    <img src="/devicel1.jpg" className="w-full h-full object-cover" alt="Explosion Device" />
+                    <img src="/device1.jpg" className="w-full h-full object-cover" alt="Explosion Device" />
                     <div className="absolute inset-0 bg-gradient-to-t from-forest-900/50 via-forest-900/20 to-transparent"></div>
                 </div>
                 <div className="p-4 bg-white text-forest-950">
@@ -150,7 +158,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 className="bg-white rounded-xl overflow-hidden shadow-md border border-forest-100 cursor-pointer"
              >
                 <div className="h-40 w-full relative">
-                    <img src="/devicel2.jpg" className="w-full h-full object-cover" alt="Reactor" />
+                    <img src="/device2.jpg" className="w-full h-full object-cover" alt="Reactor" />
                     <div className="absolute inset-0 bg-gradient-to-t from-forest-900/50 via-forest-900/20 to-transparent"></div>
                 </div>
                 <div className="p-4 bg-white text-forest-950">
@@ -204,21 +212,31 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             </div>
         </div>
 
-        {/* Footer */}
+        {/* Footer with Updated Contact Layout */}
         <div className="bg-white rounded-2xl p-8 text-center border border-forest-100 shadow-sm">
             <div className="w-24 h-24 mx-auto bg-forest-50 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
                  <img src="/sample-qr.jpg" className="w-full h-full object-cover" alt="QR Code" />
             </div>
             <h4 className="font-bold text-sm mb-6 text-forest-950">获取样品请扫码</h4>
             
-            <div className="space-y-4">
-                <div>
-                    <div className="text-sm text-forest-600 font-medium mb-1">联系人：王老师</div>
-                    <div className="text-xl font-bold text-forest-800">15810204973</div>
+            <div className="bg-forest-50/50 rounded-xl p-6 border border-forest-100 inline-block w-full">
+                <div className="flex items-center gap-2 mb-4">
+                     <div className="w-1 h-4 bg-forest-600 rounded-full"></div>
+                     <h5 className="text-sm font-bold text-forest-800">联系人</h5>
                 </div>
-                <div>
-                    <div className="text-sm text-forest-600 font-medium mb-1">联系人：冯老师</div>
-                    <div className="text-xl font-bold text-forest-800">18810528589</div>
+                <div className="space-y-3">
+                    <div className="flex items-center justify-between border-b border-forest-100 pb-2 last:border-0 last:pb-0">
+                        <span className="text-sm text-forest-700 font-medium">王老师</span>
+                        <a href="tel:15810204973" className="flex items-center gap-1 text-lg font-bold text-forest-900 font-mono">
+                           15810204973
+                        </a>
+                    </div>
+                    <div className="flex items-center justify-between">
+                        <span className="text-sm text-forest-700 font-medium">冯老师</span>
+                        <a href="tel:18810528589" className="flex items-center gap-1 text-lg font-bold text-forest-900 font-mono">
+                           18810528589
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

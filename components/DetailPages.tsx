@@ -1,13 +1,13 @@
 import React from 'react';
 import { DetailHeader, SectionTitle } from './Shared';
-import { Banknote, ShieldCheck, Leaf, Utensils, Pill, FlaskConical, TestTube, Zap, Fuel, Activity, Factory, MapPin, User, Settings2 } from 'lucide-react';
+import { Banknote, ShieldCheck, Leaf, Utensils, Pill, FlaskConical, TestTube, Zap, Fuel, Activity, Factory, MapPin, User, Settings2, Phone } from 'lucide-react';
 
 // --- Page 1: 秸秆结晶糖 ---
 export const ProductSugar: React.FC<{onBack: () => void}> = ({ onBack }) => (
     <div className="pb-8 bg-forest-50 min-h-screen">
         <DetailHeader title="产品详情: 秸秆结晶糖" onBack={onBack} />
         <div className="relative h-[340px] w-full pt-14">
-            <img src="/product1.jpg" className="w-full h-full object-cover" alt="Straw Sugar" />
+            <img src="/product.jpg" className="w-full h-full object-cover" alt="Straw Sugar" />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-forest-950/20 to-forest-950/90"></div>
             <div className="absolute bottom-6 left-6 right-6">
                 <span className="text-[10px] font-bold text-neon-400 border border-neon-400 px-2 py-0.5 rounded-full uppercase tracking-wider bg-forest-950/50">High Purity Cellulosic Crystal Sugar</span>
@@ -206,10 +206,10 @@ export const ProductFermentable: React.FC<{onBack: () => void}> = ({ onBack }) =
     </div>
 );
 
-// --- Page 3: 酶解木质素 ---
+// --- Page 3: 秸秆高活性木质素 (Renamed) ---
 export const ProductLignin: React.FC<{onBack: () => void}> = ({ onBack }) => (
     <div className="pb-8 bg-forest-50 min-h-screen">
-        <DetailHeader title="产品详情: 酶解木质素" onBack={onBack} />
+        <DetailHeader title="产品详情: 秸秆高活性木质素" onBack={onBack} />
         
         {/* Lignin Hero Image - Updated Layout */}
         <div className="relative h-[340px] w-full pt-14">
@@ -217,9 +217,9 @@ export const ProductLignin: React.FC<{onBack: () => void}> = ({ onBack }) => (
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-forest-950/20 to-forest-950/90"></div>
             <div className="absolute bottom-6 left-6 right-6">
                 <span className="text-[10px] font-bold text-neon-400 border border-neon-400 px-2 py-0.5 rounded-full uppercase tracking-wider bg-forest-950/50">
-                    Enzymatic Lignin
+                    High Activity Straw Lignin
                 </span>
-                <h2 className="text-3xl font-bold mt-2 mb-2 text-white">酶解木质素</h2>
+                <h2 className="text-3xl font-bold mt-2 mb-2 text-white">秸秆高活性木质素</h2>
                 <p className="text-sm text-white/90 leading-relaxed font-medium">
                     采用独有的低强度分级汽爆预处理结合高效酶解技术得到。在维持木质素天然骨架结构的同时，保留了极高的反应活性，是传统化学法木质素的理想替代品。
                 </p>
@@ -313,7 +313,7 @@ export const EquipExplosion: React.FC<{onBack: () => void}> = ({ onBack }) => (
     <div className="pb-8 bg-forest-50 min-h-screen">
         <DetailHeader title="装备详情: 汽爆装置" onBack={onBack} />
         <section className="relative h-[300px] w-full mt-14">
-            <img src="/devicel1.jpg" className="w-full h-full object-cover" alt="Explosion Equipment" />
+            <img src="/device1.jpg" className="w-full h-full object-cover" alt="Explosion Equipment" />
             <div className="absolute inset-0 bg-gradient-to-t from-forest-900 via-transparent to-transparent"></div>
             <div className="absolute bottom-6 left-6 right-6">
                 <span className="inline-block px-2 py-0.5 bg-neon-400 text-forest-950 text-[10px] font-bold rounded mb-2">核心自研装备</span>
@@ -402,7 +402,7 @@ export const EquipReactor: React.FC<{onBack: () => void}> = ({ onBack }) => (
     <div className="pb-8 bg-forest-50 min-h-screen">
         <DetailHeader title="装备详情: 高固酶解反应器" onBack={onBack} />
         <section className="relative w-full aspect-video mt-14 mx-4 rounded-2xl overflow-hidden max-w-[calc(100%-2rem)] border border-white/10 shadow-lg">
-            <img src="/devicel2.jpg" className="w-full h-full object-cover" alt="Reactor" />
+            <img src="/device2.jpg" className="w-full h-full object-cover" alt="Reactor" />
             <div className="absolute inset-0 bg-gradient-to-t from-forest-900 to-transparent opacity-80"></div>
             <div className="absolute bottom-4 left-4">
                 <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-md text-white text-[10px] font-bold rounded-full mb-2 border border-white/30">
@@ -495,10 +495,11 @@ export const EquipReactor: React.FC<{onBack: () => void}> = ({ onBack }) => (
     </div>
 );
 
-// --- Page 6: 廊坊中试平台 ---
+// --- Page 6: 廊坊中试平台 (Updated) ---
 export const PlatformLangfang: React.FC<{onBack: () => void}> = ({ onBack }) => (
     <div className="pb-8 bg-forest-50 min-h-screen">
-        <DetailHeader title="廊坊中试平台" onBack={onBack} />
+        {/* Updated Title */}
+        <DetailHeader title="生物质产业中试平台" onBack={onBack} />
         
         <div className="mt-14 space-y-4 px-4 mb-8">
             <div className="relative rounded-xl overflow-hidden h-48 shadow-lg">
@@ -571,11 +572,24 @@ export const PlatformLangfang: React.FC<{onBack: () => void}> = ({ onBack }) => 
                             <MapPin className="w-5 h-5 shrink-0 text-neon-400" />
                             <span className="text-sm font-bold">河北省廊坊市广阳区凤华道1号</span>
                         </div>
-                        <div className="flex items-center gap-3">
-                            <User className="w-5 h-5 shrink-0 text-neon-400" />
-                            <span className="text-sm font-bold">联系人：冯老师 18810528589</span>
-                        </div>
                     </div>
+                     {/* Updated Contact Layout for Platform Page */}
+                     <div className="mt-6 pt-6 border-t border-white/10">
+                         <div className="flex items-center gap-2 mb-3">
+                            <User className="w-4 h-4 text-neon-400" />
+                            <span className="text-xs font-bold uppercase tracking-wider text-neon-400">联系人</span>
+                         </div>
+                         <div className="space-y-2">
+                             <div className="flex justify-between items-center bg-white/5 p-2 rounded-lg">
+                                 <span className="text-sm font-medium">王老师</span>
+                                 <a href="tel:15810204973" className="font-mono font-bold text-neon-400">15810204973</a>
+                             </div>
+                             <div className="flex justify-between items-center bg-white/5 p-2 rounded-lg">
+                                 <span className="text-sm font-medium">冯老师</span>
+                                 <a href="tel:18810528589" className="font-mono font-bold text-neon-400">18810528589</a>
+                             </div>
+                         </div>
+                     </div>
                 </div>
                 {/* Decorative background elements */}
                 <Factory className="absolute -bottom-4 -right-4 w-32 h-32 text-white/10" />
