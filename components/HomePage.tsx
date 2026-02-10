@@ -77,7 +77,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 onClick={() => onNavigate('product-sugar')}
                 className="group relative h-56 rounded-xl overflow-hidden cursor-pointer shadow-lg"
             >
-                <img src="/product.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" alt="Straw Sugar" />
+                <img src="/product1.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" alt="Straw Sugar" />
                 {/* Gradient: Starts lower, leaving top clearer */}
                 <div className="absolute inset-0 bg-gradient-to-t from-forest-950/95 via-forest-950/20 to-transparent p-5 flex flex-col justify-end">
                     <h3 className="text-xl font-bold mb-1 text-white">秸秆结晶糖</h3>
