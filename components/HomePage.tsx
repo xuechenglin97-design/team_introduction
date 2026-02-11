@@ -79,7 +79,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             >
                 <div className="h-48 w-full overflow-hidden relative">
                     <img 
-                        src="/product.jpg" 
+                        src="/product1.jpg" 
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
                         alt="Straw Sugar" 
                     />
