@@ -7,7 +7,7 @@ export const ProductSugar: React.FC<{onBack: () => void}> = ({ onBack }) => (
     <div className="pb-8 bg-forest-50 min-h-screen">
         <DetailHeader title="产品详情: 秸秆结晶糖" onBack={onBack} />
         <div className="relative h-[340px] w-full pt-14">
-            <img src="/product.jpg" className="w-full h-full object-cover" alt="Straw Sugar" />
+            <img src="/product1.jpg" className="w-full h-full object-cover" alt="Straw Sugar" />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-forest-950/20 to-forest-950/90"></div>
             <div className="absolute bottom-6 left-6 right-6">
                 <span className="text-[10px] font-bold text-neon-400 border border-neon-400 px-2 py-0.5 rounded-full uppercase tracking-wider bg-forest-950/50">High Purity Cellulosic Crystal Sugar</span>
