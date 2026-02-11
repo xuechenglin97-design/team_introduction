@@ -6,19 +6,28 @@ import { Banknote, ShieldCheck, Leaf, Utensils, Pill, FlaskConical, TestTube, Za
 export const ProductSugar: React.FC<{onBack: () => void}> = ({ onBack }) => (
     <div className="pb-8 bg-forest-50 min-h-screen">
         <DetailHeader title="产品详情: 秸秆结晶糖" onBack={onBack} />
-        <div className="relative h-[340px] w-full pt-14">
-            <img src="/product1.jpg" className="w-full h-full object-cover" alt="Straw Sugar" />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-forest-950/20 to-forest-950/90"></div>
-            <div className="absolute bottom-6 left-6 right-6">
-                <span className="text-[10px] font-bold text-neon-400 border border-neon-400 px-2 py-0.5 rounded-full uppercase tracking-wider bg-forest-950/50">High Purity Cellulosic Crystal Sugar</span>
-                <h2 className="text-3xl font-bold mt-2 mb-2 text-white">秸秆结晶糖</h2>
-                <p className="text-sm text-white/90 leading-relaxed font-medium">
+        
+        {/* Top Image Section - Clean, No Overlay */}
+        <div className="h-[280px] w-full pt-14 bg-white">
+            <img src="/product.jpg" className="w-full h-full object-cover" alt="Straw Sugar" />
+        </div>
+
+        {/* Main Content Container with Overlap */}
+        <div className="px-4 -mt-10 relative z-10 space-y-6">
+            
+            {/* Header Card */}
+            <div className="bg-white rounded-xl p-6 shadow-lg border border-forest-100">
+                <div className="mb-3">
+                    <span className="inline-block px-2 py-1 bg-forest-50 border border-forest-200 text-[10px] font-bold text-forest-700 rounded uppercase tracking-wider">
+                        High Purity Cellulosic Crystal Sugar
+                    </span>
+                </div>
+                <h2 className="text-2xl font-bold text-forest-950 mb-3">秸秆结晶糖</h2>
+                <p className="text-sm text-gray-600 leading-relaxed font-medium">
                     基于秸秆高效分级、低强度汽爆预处理和秸秆高固酶解成套技术，实现高纯度秸秆结晶糖的规模化制备。
                 </p>
             </div>
-        </div>
 
-        <div className="px-5 py-6 space-y-8">
             <section>
                 <SectionTitle title="技术指标" />
                 <div className="grid grid-cols-3 gap-3 mb-4">
@@ -118,27 +127,28 @@ export const ProductSugar: React.FC<{onBack: () => void}> = ({ onBack }) => (
 export const ProductFermentable: React.FC<{onBack: () => void}> = ({ onBack }) => (
     <div className="pb-8 bg-forest-50 min-h-screen">
         <DetailHeader title="产品详情: 秸秆可发酵糖" onBack={onBack} />
-        <div className="relative h-[400px] w-full pt-14 flex items-center justify-center bg-forest-100 overflow-hidden">
-             {/* Switched to img tag for consistent local image usage */}
+        
+        {/* Top Image Section - Clean, No Overlay */}
+        <div className="h-[280px] w-full pt-14 bg-white">
             <img src="/product2.jpg" className="w-full h-full object-cover" alt="Fermentable Sugar Syrup" />
-            <div className="absolute inset-0 bg-gradient-to-t from-forest-900/95 via-forest-900/40 to-transparent"></div>
+        </div>
+
+        {/* Main Content Container with Overlap */}
+        <div className="px-4 -mt-10 relative z-10 space-y-6">
             
-            <div className="absolute bottom-6 left-6 right-6">
-                {/* Updated English Badge */}
-                <div className="mb-2">
-                    <span className="inline-block px-2 py-1 bg-neon-400/20 border border-neon-400 text-[10px] font-bold text-neon-400 rounded uppercase tracking-wider backdrop-blur-md">
-                        Straw-Derived Fermentable Sugar Syrup
+            {/* Header Card */}
+            <div className="bg-white rounded-xl p-6 shadow-lg border border-forest-100">
+                <div className="mb-3">
+                    <span className="inline-block px-2 py-1 bg-forest-50 border border-forest-200 text-[10px] font-bold text-forest-700 rounded uppercase tracking-wider">
+                         Straw-Derived Fermentable Sugar Syrup
                     </span>
                 </div>
-                <h2 className="text-3xl font-bold text-white mb-2">秸秆可发酵糖</h2>
-                {/* Updated Description */}
-                <p className="text-sm text-white/90 leading-relaxed font-medium">
+                <h2 className="text-2xl font-bold text-forest-950 mb-3">秸秆可发酵糖</h2>
+                <p className="text-sm text-gray-600 leading-relaxed font-medium">
                     通过低强度汽爆预处理、纤维素酶定制化复配技术和高固酶解等一系列技术突破，大幅降低秸秆可发酵糖成本。
                 </p>
             </div>
-        </div>
 
-        <div className="px-5 py-6 space-y-8">
             <section>
                 <SectionTitle title="技术指标" />
                 <div className="grid grid-cols-2 gap-3 mb-3">
@@ -211,22 +221,27 @@ export const ProductLignin: React.FC<{onBack: () => void}> = ({ onBack }) => (
     <div className="pb-8 bg-forest-50 min-h-screen">
         <DetailHeader title="产品详情: 秸秆高活性木质素" onBack={onBack} />
         
-        {/* Lignin Hero Image - Updated Layout */}
-        <div className="relative h-[340px] w-full pt-14">
+        {/* Top Image Section - Clean, No Overlay */}
+        <div className="h-[280px] w-full pt-14 bg-white">
             <img src="/product3.jpg" className="w-full h-full object-cover" alt="Lignin Powder" />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-forest-950/20 to-forest-950/90"></div>
-            <div className="absolute bottom-6 left-6 right-6">
-                <span className="text-[10px] font-bold text-neon-400 border border-neon-400 px-2 py-0.5 rounded-full uppercase tracking-wider bg-forest-950/50">
-                    High Activity Straw Lignin
-                </span>
-                <h2 className="text-3xl font-bold mt-2 mb-2 text-white">秸秆高活性木质素</h2>
-                <p className="text-sm text-white/90 leading-relaxed font-medium">
+        </div>
+
+        {/* Main Content Container with Overlap */}
+        <div className="px-4 -mt-10 relative z-10 space-y-6">
+            
+            {/* Header Card */}
+            <div className="bg-white rounded-xl p-6 shadow-lg border border-forest-100">
+                <div className="mb-3">
+                    <span className="inline-block px-2 py-1 bg-forest-50 border border-forest-200 text-[10px] font-bold text-forest-700 rounded uppercase tracking-wider">
+                         High Activity Straw Lignin
+                    </span>
+                </div>
+                <h2 className="text-2xl font-bold text-forest-950 mb-3">秸秆高活性木质素</h2>
+                <p className="text-sm text-gray-600 leading-relaxed font-medium">
                     采用独有的低强度分级汽爆预处理结合高效酶解技术得到。在维持木质素天然骨架结构的同时，保留了极高的反应活性，是传统化学法木质素的理想替代品。
                 </p>
             </div>
-        </div>
 
-        <div className="px-5 py-6 space-y-8">
              <section className="mb-8">
                 <div className="flex items-center gap-3 mb-4">
                     <div className="w-1.5 h-6 bg-forest-900 rounded-full"></div>
