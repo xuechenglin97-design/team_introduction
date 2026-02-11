@@ -460,7 +460,7 @@ export const EquipReactor: React.FC<{onBack: () => void}> = ({ onBack }) => (
                         <div className="flex items-center justify-between mb-3">
                             <div className="flex flex-col">
                                 <span className="text-lg font-bold text-forest-950">糖浓度提升</span>
-                                <span className="text-sm text-gray-500 mt-1">最高可达 300 g/L <span className="text-xs text-gray-400">(无浓缩情况)</span></span>
+                                <span className="text-sm text-gray-500 mt-1">最高可达 600 g/L <span className="text-xs text-gray-400"></span></span>
                             </div>
                             <div className="text-right shrink-0 ml-4">
                                 <span className="text-4xl font-bold text-forest-900">300</span>
