@@ -463,7 +463,7 @@ export const EquipReactor: React.FC<{onBack: () => void}> = ({ onBack }) => (
                                 <span className="text-sm text-gray-500 mt-1">最高可达 600 g/L <span className="text-xs text-gray-400"></span></span>
                             </div>
                             <div className="text-right shrink-0 ml-4">
-                                <span className="text-4xl font-bold text-forest-900">300</span>
+                                <span className="text-4xl font-bold text-forest-900">600</span>
                                 <span className="text-sm text-gray-500 font-medium ml-1">g/L</span>
                             </div>
                         </div>
