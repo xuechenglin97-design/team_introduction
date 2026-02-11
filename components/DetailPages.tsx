@@ -9,7 +9,7 @@ export const ProductSugar: React.FC<{onBack: () => void}> = ({ onBack }) => (
         
         {/* Top Image Section - Clean, No Overlay */}
         <div className="h-[280px] w-full pt-14 bg-white">
-            <img src="/product.jpg" className="w-full h-full object-cover" alt="Straw Sugar" />
+            <img src="/product1.jpg" className="w-full h-full object-cover" alt="Straw Sugar" />
         </div>
 
         {/* Main Content Container with Overlap */}
