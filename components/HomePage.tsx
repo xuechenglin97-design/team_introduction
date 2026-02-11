@@ -69,59 +69,90 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             </div>
         </div>
 
-        {/* Core Products - Increased height & Adjusted Gradient */}
+        {/* Core Products - Refactored to Card Layout (No Mask) */}
         <SectionTitle title="核心产品" />
         <div className="space-y-4 mb-8">
-            {/* Card 1 */}
+            {/* Card 1: Sugar */}
             <div 
                 onClick={() => onNavigate('product-sugar')}
-                className="group relative h-56 rounded-xl overflow-hidden cursor-pointer shadow-lg"
+                className="bg-white rounded-xl overflow-hidden shadow-md border border-forest-100 cursor-pointer group"
             >
-                <img src="/product1.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" alt="Straw Sugar" />
-                {/* Gradient: Starts lower, leaving top clearer */}
-                <div className="absolute inset-0 bg-gradient-to-t from-forest-950/95 via-forest-950/20 to-transparent p-5 flex flex-col justify-end">
-                    <h3 className="text-xl font-bold mb-1 text-white">秸秆结晶糖</h3>
-                    <div className="flex justify-between items-center">
-                        <span className="text-xs text-gray-200">纯度＞99%，食品级</span>
-                        <div className="flex items-center text-xs text-neon-400 bg-forest-950/60 px-2 py-1 rounded backdrop-blur-sm border border-neon-400/30 whitespace-nowrap ml-2">
-                            点击查看详情 <ChevronRight className="w-3 h-3 ml-1" />
-                        </div>
+                <div className="h-48 w-full overflow-hidden relative">
+                    <img 
+                        src="/product.jpg" 
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                        alt="Straw Sugar" 
+                    />
+                </div>
+                <div className="p-4">
+                    <div className="flex justify-between items-start mb-2">
+                        <h3 className="text-lg font-bold text-forest-950">秸秆结晶糖</h3>
+                        <span className="shrink-0 text-[10px] font-bold text-forest-700 bg-forest-50 border border-forest-200 px-2 py-1 rounded-full">
+                            纯度＞99%
+                        </span>
                     </div>
+                    <p className="text-xs text-gray-600 mb-4 leading-relaxed line-clamp-2">
+                        食品级标准，替代传统淀粉糖。成本低、白度高，广泛应用于食品及医药领域。
+                    </p>
+                    <button className="w-full py-2 bg-forest-900 text-white text-sm font-medium rounded flex items-center justify-center hover:bg-forest-800 transition-colors">
+                        点击查看详情 <ArrowRight className="w-4 h-4 ml-1" />
+                    </button>
                 </div>
             </div>
 
-            {/* Card 2 */}
+            {/* Card 2: Fermentable Sugar */}
             <div 
                 onClick={() => onNavigate('product-fermentable')}
-                className="group relative h-56 rounded-xl overflow-hidden cursor-pointer shadow-lg"
+                className="bg-white rounded-xl overflow-hidden shadow-md border border-forest-100 cursor-pointer group"
             >
-                <img src="/product2.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" alt="Fermentable Sugar" />
-                <div className="absolute inset-0 bg-gradient-to-t from-forest-950/95 via-forest-950/20 to-transparent p-5 flex flex-col justify-end">
-                    <h3 className="text-xl font-bold mb-1 text-white">秸秆可发酵糖</h3>
-                    <div className="flex flex-col gap-2">
-                        {/* Removed (无浓缩情况下) */}
-                        <span className="text-xs text-gray-200 leading-snug line-clamp-2">糖浓度最高突破600 g/L，综合成本与淀粉糖持平，可作为下游各类生物基产品的生物发酵/化学合成原料</span>
-                        <div className="self-end flex items-center text-xs text-neon-400 bg-forest-950/60 px-2 py-1 rounded backdrop-blur-sm border border-neon-400/30">
-                            点击查看详情 <ChevronRight className="w-3 h-3 ml-1" />
-                        </div>
+                <div className="h-48 w-full overflow-hidden relative">
+                    <img 
+                        src="/product2.jpg" 
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                        alt="Fermentable Sugar" 
+                    />
+                </div>
+                <div className="p-4">
+                     <div className="flex justify-between items-start mb-2">
+                        <h3 className="text-lg font-bold text-forest-950">秸秆可发酵糖</h3>
+                        <span className="shrink-0 text-[10px] font-bold text-forest-700 bg-forest-50 border border-forest-200 px-2 py-1 rounded-full">
+                            最高浓度突破600 g/L
+                        </span>
                     </div>
+                    <p className="text-xs text-gray-600 mb-4 leading-relaxed line-clamp-2">
+                         综合成本与淀粉糖持平，无需脱毒直接发酵，是理想的生物基产品原料。
+                    </p>
+                    <button className="w-full py-2 bg-forest-900 text-white text-sm font-medium rounded flex items-center justify-center hover:bg-forest-800 transition-colors">
+                        点击查看详情 <ArrowRight className="w-4 h-4 ml-1" />
+                    </button>
                 </div>
             </div>
 
-            {/* Card 3 - Renamed to 秸秆高活性木质素 */}
+            {/* Card 3: Lignin */}
             <div 
                 onClick={() => onNavigate('product-lignin')}
-                className="group relative h-56 rounded-xl overflow-hidden cursor-pointer shadow-lg"
+                className="bg-white rounded-xl overflow-hidden shadow-md border border-forest-100 cursor-pointer group"
             >
-                <img src="/product3.jpg" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" alt="Lignin" />
-                <div className="absolute inset-0 bg-gradient-to-t from-forest-950/95 via-forest-950/20 to-transparent p-5 flex flex-col justify-end">
-                    <h3 className="text-xl font-bold mb-1 text-white">秸秆高活性木质素</h3>
-                    <div className="flex flex-col gap-2">
-                        <span className="text-xs text-gray-200 leading-snug line-clamp-2">高反应活性，可用于制备无醛黏合剂、特种分散剂等各类产品</span>
-                        <div className="self-end flex items-center text-xs text-neon-400 bg-forest-950/60 px-2 py-1 rounded backdrop-blur-sm border border-neon-400/30">
-                            点击查看详情 <ChevronRight className="w-3 h-3 ml-1" />
-                        </div>
+                <div className="h-48 w-full overflow-hidden relative">
+                    <img 
+                        src="/product3.jpg" 
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                        alt="Lignin" 
+                    />
+                </div>
+                <div className="p-4">
+                     <div className="flex justify-between items-start mb-2">
+                        <h3 className="text-lg font-bold text-forest-950">秸秆高活性木质素</h3>
+                        <span className="shrink-0 text-[10px] font-bold text-forest-700 bg-forest-50 border border-forest-200 px-2 py-1 rounded-full">
+                            酚羟基含量&gt;3.0 mmol/g
+                        </span>
                     </div>
+                    <p className="text-xs text-gray-600 mb-4 leading-relaxed line-clamp-2">
+                        保留天然结构与活性官能团，可用于制备无醛黏合剂、特种分散剂等。
+                    </p>
+                    <button className="w-full py-2 bg-forest-900 text-white text-sm font-medium rounded flex items-center justify-center hover:bg-forest-800 transition-colors">
+                        点击查看详情 <ArrowRight className="w-4 h-4 ml-1" />
+                    </button>
                 </div>
             </div>
         </div>
